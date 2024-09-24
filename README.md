@@ -125,7 +125,6 @@ Contributions are welcome! If you’d like to contribute, please fork the reposi
 
 ## Fork the repository:
 
-```bash
 # Create your feature branch:
 git checkout -b feature/your-feature-name
 
