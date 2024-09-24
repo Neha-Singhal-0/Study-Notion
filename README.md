@@ -1,6 +1,3 @@
-
-
-```md
 # Study Notion
 
 **Study Notion** is a comprehensive EdTech platform that caters to both **Instructors** and **Students**. It provides distinct functionalities for each type of user, such as course creation and tracking for instructors, and course browsing and purchasing for students. The platform also features a secure OTP-based registration and a category-based course management system controlled by admins.
@@ -78,69 +75,59 @@ To get the project up and running locally, follow these steps:
 ### Installation
 
 1. **Clone the repository:**
-   ```bash
    git clone https://github.com/Neha-Singhal-0/Study-Notion.git
-   ```
 
-2. **Navigate to the project directory:**
-   ```bash
-   cd Study-Notion
-   ```
+# 2. Navigate to the project directory:
+cd Study-Notion
 
-3. **Install dependencies for both frontend and backend:**
-   ```bash
-   # Install frontend dependencies
-   cd src
-   npm install
+# 3. Install dependencies for both frontend and backend:
+# Install frontend dependencies
+cd src
+npm install
 
-   # Install backend dependencies
-   cd ../server
-   npm install
-   ```
+# Install backend dependencies
+cd ../server
+npm install
 
-4. **Set up environment variables:**
-   - Create a `.env` file in the root of the `/server` directory and add the following:
-     ```
-     MONGO_URI=<your-mongodb-uri>
-     JWT_SECRET=<your-jwt-secret>
-     CLOUDINARY_CLOUD_NAME=<your-cloudinary-cloud-name>
-     CLOUDINARY_API_KEY=<your-cloudinary-api-key>
-     CLOUDINARY_API_SECRET=<your-cloudinary-api-secret>
-     ```
+# 4. Set up environment variables:
+# Create a .env file in the root of the /server directory and add the following:
+MONGO_URI=<your-mongodb-uri>
+JWT_SECRET=<your-jwt-secret>
+CLOUDINARY_CLOUD_NAME=<your-cloudinary-cloud-name>
+CLOUDINARY_API_KEY=<your-cloudinary-api-key>
+CLOUDINARY_API_SECRET=<your-cloudinary-api-secret>
 
-5. **Start the development servers:**
-   - Frontend (inside `/src`):
-     ```bash
-     npm start
-     ```
-   - Backend (inside `/server`):
-     ```bash
-     npm run dev
-     ```
+# 5. Start the development servers:
+# Frontend (inside /src):
+npm start
 
-6. Open your browser and navigate to `http://localhost:3000` for the frontend and `http://localhost:5000` for the backend.
+# Backend (inside /server):
+npm run dev
 
-## Usage
+# 6. Open your browser and navigate to:
+# Frontend: http://localhost:3000
+# Backend: http://localhost:5000
 
-- **Instructor**: Can log in, create courses, and track student progress.
-- **Student**: Can browse and purchase courses, and track their progress.
-- **Admin**: Can manage categories to restrict what courses instructors can create.
 
-## Deployed Links
+Usage
+Instructor: Can log in, create courses, and track student progress.
+Student: Can browse and purchase courses, and track their progress.
+Admin: Can manage categories to restrict what courses instructors can create.
 
-- **Frontend**: [Study Notion Frontend on Vercel](https://study-notion-frontend-1nresh692-neha-singhals-projects.vercel.app/)
-- **Backend**: [Study Notion Backend on Render](https://study-notion-backend-l79z.onrender.com)
 
-## Contributing
+Deployed Links
+Frontend: Study Notion Frontend on Vercel
+Backend: Study Notion Backend on Render
 
+Contributing
 Contributions are welcome! If you’d like to contribute, please fork the repository and use a feature branch. Pull requests are warmly welcome.
 
-1. Fork the repository
-2. Create your feature branch: `git checkout -b feature/your-feature-name`
-3. Commit your changes: `git commit -m 'Add some feature'`
-4. Push to the branch: `git push origin feature/your-feature-name`
-5. Open a pull request
+Fork the repository
+Create your feature branch: git checkout -b feature/your-feature-name
+Commit your changes: git commit -m 'Add some feature'
+Push to the branch: git push origin feature/your-feature-name
+Open a pull request
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+License
+This project is licensed under the MIT License - see the LICENSE file for details.
+   
