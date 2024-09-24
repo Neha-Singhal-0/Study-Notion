@@ -116,8 +116,8 @@ Admin: Can manage categories to restrict what courses instructors can create.
 
 
 # Deployed Links
-Frontend: Study Notion Frontend on Vercel
-Backend: Study Notion Backend on Render
+Frontend: [Study Notion Frontend on Vercel](https://study-notion-frontend-1nresh692-neha-singhals-projects.vercel.app/)
+Backend: [Study Notion Backend on Render](https://study-notion-backend-l79z.onrender.com/)
 
 # Contributing
 Contributions are welcome! If you’d like to contribute, please fork the repository and use a feature branch. Pull requests are warmly welcome.
