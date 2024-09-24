@@ -74,7 +74,7 @@ To get the project up and running locally, follow these steps:
 
 ### Installation
 
-#1. Clone the repository:
+# 1. Clone the repository:
    git clone https://github.com/Neha-Singhal-0/Study-Notion.git
 
 # 2. Navigate to the project directory:
