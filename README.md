@@ -105,28 +105,28 @@ npm start
 npm run dev
 
 # 6. Open your browser and navigate to:
-# Frontend: http://localhost:3000
-# Backend: http://localhost:5000
+- Frontend: http://localhost:3000
+- Backend: http://localhost:4000
 
 
 # Usage
-Instructor: Can log in, create courses, and track student progress.
-Student: Can browse and purchase courses, and track their progress.
-Admin: Can manage categories to restrict what courses instructors can create.
+-Instructor: Can log in, create courses, and track student progress.
+-Student: Can browse and purchase courses, and track their progress.
+-Admin: Can manage categories to restrict what courses instructors can create.
 
 
 # Deployed Links
-Frontend: [Study Notion Frontend on Vercel](https://study-notion-frontend-1nresh692-neha-singhals-projects.vercel.app/)
-Backend: [Study Notion Backend on Render](https://study-notion-backend-l79z.onrender.com/)
+-Frontend: [Study Notion Frontend on Vercel](https://study-notion-frontend-1nresh692-neha-singhals-projects.vercel.app/)
+-Backend: [Study Notion Backend on Render](https://study-notion-backend-l79z.onrender.com/)
 
 # Contributing
-Contributions are welcome! If you’d like to contribute, please fork the repository and use a feature branch. Pull requests are warmly welcome.
+-Contributions are welcome! If you’d like to contribute, please fork the repository and use a feature branch. Pull requests are warmly welcome.
 
 # Fork the repository
-Create your feature branch: git checkout -b feature/your-feature-name
-Commit your changes: git commit -m 'Add some feature'
-Push to the branch: git push origin feature/your-feature-name
-Open a pull request
+-Create your feature branch: git checkout -b feature/your-feature-name
+-Commit your changes: git commit -m 'Add some feature'
+-Push to the branch: git push origin feature/your-feature-name
+-Open a pull request
 
 # License
 This project is licensed under the MIT License - see the LICENSE file for details.
