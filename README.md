@@ -125,16 +125,16 @@ Contributions are welcome! If you’d like to contribute, please fork the reposi
 
 ## Fork the repository:
 
-# Create your feature branch:
+-** Create your feature branch**:
 git checkout -b feature/your-feature-name
 
-# Commit your changes:
+-**Commit your changes**:
 git commit -m 'Add some feature'
 
-# Push to the branch:
+-**Push to the branch**:
 git push origin feature/your-feature-name
 
-# Open a pull request
+-** Open a pull request**
 
 
 ## License
