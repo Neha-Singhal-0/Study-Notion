@@ -1,150 +1,146 @@
----
 
+
+```md
 # Study Notion
 
-**Study Notion** is a comprehensive EdTech platform built using the **MERN stack**. It is designed to cater to two distinct user roles, **Instructors** and **Students**, each with their own customized user interface and functionalities. The platform also incorporates **OTP-based verification** for secure user registration. The application is deployed with the **frontend on Vercel** and the **backend on Render**.
+**Study Notion** is a comprehensive EdTech platform that caters to both **Instructors** and **Students**. It provides distinct functionalities for each type of user, such as course creation and tracking for instructors, and course browsing and purchasing for students. The platform also features a secure OTP-based registration and a category-based course management system controlled by admins.
+
+## Table of Contents
+1. [Features](#features)
+2. [Technologies Used](#technologies-used)
+3. [Project Structure](#project-structure)
+4. [Getting Started](#getting-started)
+5. [Usage](#usage)
+6. [Deployed Links](#deployed-links)
+7. [Contributing](#contributing)
+8. [License](#license)
 
 ## Features
 
-### 1. **User Roles**
-   - **Instructors:**
-     - Can create courses.
-     - Track the progress of students who have purchased their courses.
-     - Instructors are restricted to create courses only under categories specified by the Admin.
-   - **Students:**
-     - Can view all available courses.
-     - Purchase courses and track their progress.
-     - Can access purchased course content.
+### For Instructors:
+- **Login and Signup with OTP Verification**: Users must verify their identity with an OTP to complete the signup process.
+- **Course Creation**: Instructors can create courses, but they are restricted to creating courses in the categories defined by the admin.
+- **Student Progress Tracking**: Instructors can track the progress of students who have purchased their courses.
 
-### 2. **Role of Admin**
-   - **Admin** creates course categories.
-   - Instructors are limited to creating courses under these predefined categories.
-   - Ensures proper organization and maintenance of the course catalog.
+### For Students:
+- **View All Courses**: Students can browse all available courses.
+- **Purchase Courses**: Students can purchase courses and access the course content.
+- **Track Progress**: Students can see their progress through each course.
 
-### 3. **OTP-Based Verification**
-   - Secure user registration by verifying email with a One-Time Password (OTP).
-   - Only verified users can register on the platform.
+### For Admin:
+- **Category Management**: Admins can create categories, and instructors are restricted to creating courses only within these admin-defined categories.
 
-### 4. **Course Management**
-   - **Course Creation:** Instructors create and upload course content (videos, resources).
-   - **Progress Tracking:** Students and Instructors can track course progress.
+## Technologies Used
 
-### 5. **Tech Stack**
-   - **Frontend:** React.js, Redux, CSS, and Axios for API requests.
-   - **Backend:** Node.js, Express.js, MongoDB.
-   - **Database:** MongoDB stores user information, course details, and student progress.
-   - **Media Management:** Cloudinary is integrated to handle media uploads such as course videos and images.
+The project is built using the **MERN stack** with the following key technologies:
 
+- **MongoDB**: NoSQL database used for storing user data, course information, and more.
+- **Express.js**: Backend framework for building the REST API.
+- **React.js**: Frontend library used to build a dynamic and interactive UI.
+- **Node.js**: Backend runtime environment for running JavaScript on the server side.
+- **Cloudinary**: Used for managing and storing media such as course images and videos.
+- **JWT (JSON Web Tokens)**: Used for user authentication and authorization.
+- **OTP-based Verification**: Secure signup process by sending an OTP to verify user identity.
+- **Mongoose**: Object Data Modeling (ODM) library for MongoDB.
+- **Tailwind CSS**: Utility-first CSS framework used to design a responsive and modern UI.
+  
 ## Project Structure
 
-The project is divided into two main parts: **Frontend** and **Backend**. Below is an explanation of the folder structure for both.
+The project follows an **MVC (Model-View-Controller)** architecture for maintainability and scalability. Below is an overview of the main directories:
 
-### Frontend
+### `/server`
+- **config**: Database and other configurations.
+- **controllers**: Contains the logic for handling requests.
+- **mail/templates**: HTML email templates for OTP verification.
+- **middlewares**: Custom middleware functions for authentication, authorization, etc.
+- **models**: Mongoose models for MongoDB collections.
+- **routes**: Express routes for API endpoints.
+- **utils**: Utility functions like OTP generation and more.
 
-Located in the `src/` folder.
-
-- **Components:** Contains reusable components like buttons, forms, and layout elements.
-- **Pages:** Includes pages like the course list, course creation, user dashboard, and login/signup.
-- **Services:** Manages API calls related to authentication, course creation, and student progress.
-- **Redux Slices:** Handles application state using Redux for authentication, courses, and user roles.
-- **Hooks:** Custom hooks to abstract logic, such as handling forms or fetching data.
-- **Assets:** Stores static assets like images, fonts, etc.
-
-### Backend
-
-Located in the `server/` folder.
-
-- **Config:** Holds configuration files like database setup, environment variables, etc.
-- **Controllers:** Handles the core business logic such as course creation, student registration, and progress tracking.
-- **Routes:** Defines the API endpoints, e.g., `/api/users`, `/api/courses`.
-- **Models:** Schema definitions for MongoDB collections (User, Course, Category).
-- **Middleware:** Custom middlewares like authentication checks, error handling, etc.
-- **Utils:** Contains helper functions such as email verification utilities for OTP.
-
-## Deployment
-
-The project is deployed using **Vercel** for the frontend and **Render** for the backend.
-
-- **Frontend:** [Study Notion Frontend](https://study-notion-frontend-1nresh692-neha-singhals-projects.vercel.app/)
-- **Backend:** [Study Notion Backend](https://study-notion-backend-l79z.onrender.com)
+### `/src`
+- **assets**: Static files like images.
+- **components**: React components for building the UI.
+- **hooks**: Custom hooks to manage state and side effects.
+- **pages**: React pages corresponding to different routes (e.g., login, signup, courses).
+- **slices**: Redux slices for state management.
+- **services**: API service files for communication between frontend and backend.
 
 ## Getting Started
 
-To run the project locally, follow these steps:
+To get the project up and running locally, follow these steps:
 
 ### Prerequisites
 
-- Node.js installed on your local machine.
-- MongoDB setup locally or using a cloud service like MongoDB Atlas.
-- Cloudinary account for managing media uploads.
+- Node.js installed on your machine
+- MongoDB (you can use MongoDB Atlas or a local instance)
+- Cloudinary account for media management
 
 ### Installation
 
-1. Clone the repository:
-
+1. **Clone the repository:**
    ```bash
    git clone https://github.com/Neha-Singhal-0/Study-Notion.git
    ```
 
-2. Install dependencies:
-
-   For the backend:
-
+2. **Navigate to the project directory:**
    ```bash
-   cd server
+   cd Study-Notion
+   ```
+
+3. **Install dependencies for both frontend and backend:**
+   ```bash
+   # Install frontend dependencies
+   cd src
+   npm install
+
+   # Install backend dependencies
+   cd ../server
    npm install
    ```
 
-   For the frontend:
+4. **Set up environment variables:**
+   - Create a `.env` file in the root of the `/server` directory and add the following:
+     ```
+     MONGO_URI=<your-mongodb-uri>
+     JWT_SECRET=<your-jwt-secret>
+     CLOUDINARY_CLOUD_NAME=<your-cloudinary-cloud-name>
+     CLOUDINARY_API_KEY=<your-cloudinary-api-key>
+     CLOUDINARY_API_SECRET=<your-cloudinary-api-secret>
+     ```
 
-   ```bash
-   npm install
-   ```
+5. **Start the development servers:**
+   - Frontend (inside `/src`):
+     ```bash
+     npm start
+     ```
+   - Backend (inside `/server`):
+     ```bash
+     npm run dev
+     ```
 
-3. Set up environment variables:
+6. Open your browser and navigate to `http://localhost:3000` for the frontend and `http://localhost:5000` for the backend.
 
-   Create a `.env` file in the `server` directory and add the following variables:
+## Usage
 
-   ```bash
-   PORT=5000
-   MONGO_URI=<your_mongo_db_uri>
-   JWT_SECRET=<your_jwt_secret>
-   CLOUDINARY_CLOUD_NAME=<your_cloudinary_name>
-   CLOUDINARY_API_KEY=<your_cloudinary_api_key>
-   CLOUDINARY_API_SECRET=<your_cloudinary_api_secret>
-   ```
+- **Instructor**: Can log in, create courses, and track student progress.
+- **Student**: Can browse and purchase courses, and track their progress.
+- **Admin**: Can manage categories to restrict what courses instructors can create.
 
-4. Run the development server:
+## Deployed Links
 
-   For backend:
+- **Frontend**: [Study Notion Frontend on Vercel](https://study-notion-frontend-1nresh692-neha-singhals-projects.vercel.app/)
+- **Backend**: [Study Notion Backend on Render](https://study-notion-backend-l79z.onrender.com)
 
-   ```bash
-   npm run dev
-   ```
+## Contributing
 
-   For frontend:
+Contributions are welcome! If you’d like to contribute, please fork the repository and use a feature branch. Pull requests are warmly welcome.
 
-   ```bash
-   npm start
-   ```
+1. Fork the repository
+2. Create your feature branch: `git checkout -b feature/your-feature-name`
+3. Commit your changes: `git commit -m 'Add some feature'`
+4. Push to the branch: `git push origin feature/your-feature-name`
+5. Open a pull request
 
-5. Visit `http://localhost:3000` to view the application.
+## License
 
-## Technologies Used
-
-- **React.js**: For building the user interface and creating reusable UI components.
-- **Redux**: For state management across the entire app.
-- **Node.js**: Handles backend services, including user authentication and course management.
-- **Express.js**: Web framework for creating API routes and handling server logic.
-- **MongoDB**: NoSQL database for storing user, course, and category data.
-- **Cloudinary**: Media management tool for handling course video and image uploads.
-- **Axios**: For making HTTP requests to the backend from the frontend.
-- **JWT**: JSON Web Tokens for handling user authentication and authorization.
-
-## Conclusion
-
-**Study Notion** provides an integrated platform for online learning with instructor-student interaction. It ensures a seamless experience for both instructors creating courses and students consuming the content, all while maintaining secure user verification and progress tracking.
-
-Feel free to explore the platform and contribute!
-
---- 
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
