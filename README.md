@@ -74,7 +74,7 @@ To get the project up and running locally, follow these steps:
 
 ### Installation
 
-1. **Clone the repository:**
+#1. Clone the repository:
    git clone https://github.com/Neha-Singhal-0/Study-Notion.git
 
 # 2. Navigate to the project directory:
@@ -109,25 +109,25 @@ npm run dev
 # Backend: http://localhost:5000
 
 
-Usage
+# Usage
 Instructor: Can log in, create courses, and track student progress.
 Student: Can browse and purchase courses, and track their progress.
 Admin: Can manage categories to restrict what courses instructors can create.
 
 
-Deployed Links
+# Deployed Links
 Frontend: Study Notion Frontend on Vercel
 Backend: Study Notion Backend on Render
 
-Contributing
+# Contributing
 Contributions are welcome! If you’d like to contribute, please fork the repository and use a feature branch. Pull requests are warmly welcome.
 
-Fork the repository
+# Fork the repository
 Create your feature branch: git checkout -b feature/your-feature-name
 Commit your changes: git commit -m 'Add some feature'
 Push to the branch: git push origin feature/your-feature-name
 Open a pull request
 
-License
+# License
 This project is licensed under the MIT License - see the LICENSE file for details.
    
