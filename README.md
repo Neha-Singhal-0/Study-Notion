@@ -2,7 +2,9 @@
 
 **Study Notion** is a comprehensive EdTech platform that caters to both **Instructors** and **Students**. It provides distinct functionalities for each type of user, such as course creation and tracking for instructors, and course browsing and purchasing for students. The platform also features a secure OTP-based registration and a category-based course management system controlled by admins.
 
-# Deployed Link -[StudyNotion](https://completeproject.onrender.com/)
+# Deployed Link 
+
+[StudyNotion](https://completeproject.onrender.com/)
 
 ## Table of Contents
 1. [Features](#features)
